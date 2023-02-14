@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="text-6xl my-10 font-medium text-center h1">Banking System <span class="text-red-500"> In Javascript </span> !!!</h1>
+</header>
+<main class="main my-10">
+  <!--* ====bank first section complete===== *-->
+
+  <section class="mt-10">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 w-3/4 mx-auto" id="grid">
+      <div class="bg-yellow-400 p-8 text-center rounded-lg drop-shadow-2xl">
+        <h2 class="text-5xl font-serif font-semibold -tracking-tighter text-white">deposit</h2>
+        <h4 class="text-5xl my-4 text-white -tracking-tighter">$<span id="deposit">00</span></h4>
+      </div>
+    <div class="bg-red-400 p-8 text-center rounded-lg drop-shadow-2xl">
+        <h2 class="text-5xl font-serif font-semibold -tracking-tighter text-white">withdraw</h2>
+        <h4 class="text-5xl my-4 text-white -tracking-tighter">$<span id="withdraw">00</span></h4>
+      </div>
+      <div class="bg-blue-400 p-8 text-center rounded-lg drop-shadow-2xl">
+        <h2 class="text-5xl  font-serif font-semibold -tracking-tighter text-white">balanced</h2>
+        <h4 class="text-5xl my-4 text-white -tracking-tighter">$<span id="balance">1750</span></h4>
+      </div>
+    </div>
+  </section>
+  <!--* ====bank firste section end===== *-->
+    <section class="mt-8 w-3/4 mx-auto" id="section">
+            <div class="grid lg:grid-cols-2 gap-4">
+                <div class="bg-violet-400 p-8 rounded-lg">
+                    <h3 class="text-4xl text-white mb-4 text">Your Deposit</h3>
+                    <input id="deposit-field" class="w-3/4 px-4 py-3 rounded block" type="text" autofocus placeholder="$ Amount  you want to deposit">
+                    <button id="btn-deposit" class="bg-blue-800 px-6 py-2 text-white rounded-lg mt-4 font-medium hover:bg-blue-600 button">Deposit</button>
+                </div>
+                <div class="bg-amber-400 p-8 rounded-lg">
+                    <h3 class="text-4xl text-white mb-4 text">Your Withdraw</h3>
+                    <input id="withdraw-field" class="w-3/4 px-4 py-3 rounded block" type="text" autofocus placeholder="$ Amount  you want to deposit">
+                    <button id="btn-withdraw" class="bg-blue-800 px-6 py-2 text-white rounded-lg mt-4 font-medium hover:bg-blue-600 button">Withdraw</button>
+                </div>
+            </div>
+        </section>
+</main>
+</body>
+<!--* ====castom js file link up===== *-->
+<script src="js/bank-system.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</html>
